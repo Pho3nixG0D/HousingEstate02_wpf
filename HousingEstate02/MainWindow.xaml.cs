@@ -27,12 +27,11 @@ namespace HousingEstate02
         {
             InitializeComponent();
         }
-      
 
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
             //menu.MainClass.option1(housing);
-
+            
         }
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
@@ -42,5 +41,17 @@ namespace HousingEstate02
         {
 
         }
+        private void Button_Click4(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button_Click6(object sender, RoutedEventArgs e)
+        {
+        }
+
     }
 }
