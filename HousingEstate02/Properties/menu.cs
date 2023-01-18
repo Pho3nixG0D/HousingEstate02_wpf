@@ -171,10 +171,10 @@ namespace menu
 
         internal static void option1(Housingestate housing)
         {
-            Console.WriteLine("To create a BlockOfFlats, write a number which you want");
+            //Console.WriteLine("To create a BlockOfFlats, write a number which you want");
             int objectName = int.Parse(Console.ReadLine());
             housing.AddBlockInHousing(new BlockOfFlats(objectName));
-            Console.WriteLine("You successfully created a Block of Flats {0}", objectName);
+            //Console.WriteLine("You successfully created a Block of Flats {0}", objectName);
             System.Threading.Thread.Sleep(3000);
         }
         internal static void option2(BlockOfFlats block)

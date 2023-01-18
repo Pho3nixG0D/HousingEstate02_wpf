@@ -31,7 +31,7 @@ namespace HousingEstate02
 
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            menu.MainClass.option1(housing);
+            //menu.MainClass.option1(housing);
 
         }
         private void Button_Click2(object sender, RoutedEventArgs e)
