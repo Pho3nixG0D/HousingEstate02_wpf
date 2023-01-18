@@ -77,6 +77,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\BlockOfFlats.cs" />
+    <Compile Include="Properties\ObservableObject.cs" />
     <Compile Include="Properties\Entrance.cs" />
     <Compile Include="Properties\Flat.cs" />
     <Compile Include="Properties\Housingestate.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Properties\menu.cs" />
     <Compile Include="Properties\Person.cs" />
     <Compile Include="Properties\Program.cs" />
+    <Compile Include="Properties\RelayCommand.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
