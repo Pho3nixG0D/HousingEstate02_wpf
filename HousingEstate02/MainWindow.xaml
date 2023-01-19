@@ -27,6 +27,11 @@
                 <RadioButton Height="50" Click="Button_Click5" Content="Create Inhabitant" Foreground="White" Style="{StaticResource MButtonTheme}"/>
                 <RadioButton Height="50" Click="Button_Click6" Content="Show info" Foreground="White" Style="{StaticResource MButtonTheme}"/>
             </StackPanel>
+
+            <ContentControl Grid.Row="1"
+                                Grid.Column="1"
+                            Margin="10"/>
+
         </Grid>
         
     </Border>

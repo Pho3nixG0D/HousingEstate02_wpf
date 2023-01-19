@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,7 +71,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Properties\MButtonTheme.xaml">
+    <Page Include="Themes\MButtonTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,16 +84,16 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\BlockOfFlats.cs" />
-    <Compile Include="Properties\ObservableObject.cs" />
-    <Compile Include="Properties\Entrance.cs" />
-    <Compile Include="Properties\Flat.cs" />
-    <Compile Include="Properties\Housingestate.cs" />
-    <Compile Include="Properties\Inhabitant.cs" />
-    <Compile Include="Properties\menu.cs" />
-    <Compile Include="Properties\Person.cs" />
-    <Compile Include="Properties\Program.cs" />
-    <Compile Include="Properties\RelayCommand.cs" />
+    <Compile Include="Backend\BlockOfFlats.cs" />
+    <Compile Include="Themes\ObservableObject.cs" />
+    <Compile Include="Backend\Entrance.cs" />
+    <Compile Include="Backend\Flat.cs" />
+    <Compile Include="Backend\Housingestate.cs" />
+    <Compile Include="Backend\Inhabitant.cs" />
+    <Compile Include="Backend\menu.cs" />
+    <Compile Include="Backend\Person.cs" />
+    <Compile Include="Backend\Program.cs" />
+    <Compile Include="Themes\RelayCommand.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
