@@ -3,10 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:view="clr-namespace:HousingEstate02.View"
+        xmlns:viewModel="clr-namespace:HousingEstate02.ViewModel"
         xmlns:local="clr-namespace:HousingEstate02"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="Transparent">
-    <Border Padding="10" Background="#7C00B8" CornerRadius="20">
+        Title="MainWindow" Height="450" Width="950" Background="Transparent"
+        WindowStyle="none"
+        AllowsTransparency="True"
+        MinWidth="900"
+        MinHeight="400">
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    
+    <Border Padding="10" Background="#7C00B8" CornerRadius="20" MouseDown="Border_MouseDown">
         
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -20,17 +30,18 @@
 
                 <TextBlock Text="Housing Estate" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="LightSkyBlue" FontWeight="Bold" FontSize="26" />
             <StackPanel  Grid.Row="1" Grid.Column="0" Margin="0 10 0 0">
-                <RadioButton Height="50" Click="Button_Click1" Content="Create BoF" Foreground="White" Style="{StaticResource MButtonTheme}"/>
+                <RadioButton Height="50" Click="Button_Click1" Content="Create BoF" Foreground="White" Style="{StaticResource MButtonTheme}" Command="{Binding BoFCViewCommand}"/>
                 <RadioButton Height="50" Click="Button_Click2" Content="Create Entrance" Foreground="White" Style="{StaticResource MButtonTheme}"/>
                 <RadioButton Height="50" Click="Button_Click3" Content="Create Flat" Foreground="White" Style="{StaticResource MButtonTheme}"/>
                 <RadioButton Height="50" Click="Button_Click4" Content="Create Person" Foreground="White" Style="{StaticResource MButtonTheme}"/>
-                <RadioButton Height="50" Click="Button_Click5" Content="Create Inhabitant" Foreground="White" Style="{StaticResource MButtonTheme}"/>
-                <RadioButton Height="50" Click="Button_Click6" Content="Show info" Foreground="White" Style="{StaticResource MButtonTheme}"/>
+                <RadioButton Height="50" Click="Button_Click5" Content="Show info" Foreground="White" Style="{StaticResource MButtonTheme}"/>
+                <RadioButton Height="50" Click="Button_Click6" Content="Home" Foreground="White" Style="{StaticResource MButtonTheme}" Command="{Binding HomeViewCommand}" IsChecked="True"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"
                                 Grid.Column="1"
-                            Margin="10"/>
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
 
         </Grid>
         

@@ -57,5 +57,15 @@ namespace HousingEstate02
         {
 
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton== MouseButtonState.Pressed)
+            {
+                Mouse.OverrideCursor = Cursors.Hand;
+                DragMove();
+            }
+            Mouse.OverrideCursor = Cursors.Arrow;
+        }
     }
 }
