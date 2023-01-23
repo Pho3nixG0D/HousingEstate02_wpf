@@ -7,11 +7,11 @@
         xmlns:viewModel="clr-namespace:HousingEstate02.ViewModel"
         xmlns:local="clr-namespace:HousingEstate02"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="950" Background="Transparent"
+        Title="MainWindow" Height="600" Width="1050" Background="Transparent"
         WindowStyle="none"
         AllowsTransparency="True"
-        MinWidth="900"
-        MinHeight="400">
+        MinWidth="1050"
+        MinHeight="600">
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>

@@ -15,7 +15,7 @@
                        HorizontalAlignment="Left"
                        Margin="0 0 0 20"/>
         <StackPanel Orientation="Horizontal">
-            <Border Width="800" Height="400">
+            <Border Width="800" Height="350">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="#BF66E5" Offset="0.0"/>
@@ -24,11 +24,11 @@
                     </LinearGradientBrush>
                 </Border.Background>
                 <Border.Clip>
-                    <RectangleGeometry RadiusX="20" RadiusY="20" Rect="0,0,800,400"/>
+                    <RectangleGeometry RadiusX="20" RadiusY="20" Rect="0,0,800,350"/>
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Do you want to build Hoesing estate?"
+                        <TextBlock Text="Do you want to build Housing estate?"
                                    Foreground="White"
                                    FontSize="38"
                                    FontWeight="Bold"
@@ -41,7 +41,7 @@
                                    Margin="0 10 0 0 "
                                    HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <Image Source="/Images/imgHousingEstate.png" Margin="210,123,-21,-52"/>
+                    <Image Source="/Images/imgHousingEstate.png" Margin="227,101,13,-2"/>
                     <Image Source="/Images/logohouse.png" Margin="-88,154,498,51"/>
 
 

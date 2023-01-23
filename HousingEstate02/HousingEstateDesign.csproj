@@ -137,7 +137,7 @@
     <Resource Include="Images\Flat.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\simple-house-symbol-and-home-icon-sign-free-png.png" />
+    <Resource Include="Images\logohouse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
