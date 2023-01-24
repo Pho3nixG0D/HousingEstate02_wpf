@@ -21,7 +21,8 @@ namespace HousingEstate02
     /// </summary>
     public partial class MainWindow : Window
     {
-        Housingestate housing = new Housingestate("Kysuce");
+         Housingestate housing = new Housingestate("Kysuce");
+
 
         public MainWindow()
         {

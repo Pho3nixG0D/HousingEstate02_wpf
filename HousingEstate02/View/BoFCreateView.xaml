@@ -43,7 +43,7 @@
                                       VerticalContentAlignment="Top"
                                       >
                             </ComboBox>
-                            <Button x:Name="SelectButton" Width="60" Content="Select"/>
+                            <Button x:Name="SelectButtonBoF" Width="60" Content="Select"/>
                         </StackPanel>
                     </StackPanel>
 

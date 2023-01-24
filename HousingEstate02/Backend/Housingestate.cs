@@ -13,6 +13,8 @@ namespace HousingEstate
         private string nameOfHousingEstate;
         private List<BlockOfFlats> blocks = new List<BlockOfFlats>();
 
+        public Housingestate housing = new Housingestate("Kysuce");
+   
 
         //Properties
         public string NameOfHousingEstate

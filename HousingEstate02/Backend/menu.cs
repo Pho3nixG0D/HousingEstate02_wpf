@@ -14,6 +14,7 @@ namespace menu
 {
     public class MainClass
     {
+        Housingestate housing = new Housingestate("Kysuce");
 
         public static void printMenu(string[] options)
         {
