@@ -55,8 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\EntranceViewModel.cs" />
     <Compile Include="ViewModel\BoFCreateViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\EntranceView.xaml.cs">
+      <DependentUpon>EntranceView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\BoFCreateView.xaml.cs">
       <DependentUpon>BoFCreateView.xaml</DependentUpon>
     </Compile>
@@ -79,6 +83,10 @@
     <Page Include="Themes\MButtonTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EntranceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\BoFCreateView.xaml">
       <SubType>Designer</SubType>

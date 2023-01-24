@@ -18,6 +18,9 @@
             <DataTemplate DataType="{x:Type viewModel:BoFCreateViewModel}">
                 <view:BoFCreateView/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:EntranceViewModel}">
+                <view:EntranceView/>
+            </DataTemplate>
 
 
         </ResourceDictionary>

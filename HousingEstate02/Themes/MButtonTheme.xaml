@@ -26,6 +26,7 @@
             <Trigger Property="IsChecked" Value="True">
                 
                 <Setter Property="Background" Value="#330066"/>
+            
             </Trigger>
                 
             
