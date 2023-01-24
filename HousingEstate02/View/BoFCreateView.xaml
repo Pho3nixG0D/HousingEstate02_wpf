@@ -32,16 +32,19 @@
                                    Foreground="White"
                                    FontSize="20"
                                    Margin="20 10 10 0 "/>
-                        <ComboBox Width="120" Height="48"
-                                  x:Name="bofNumCombo"
-                                  FontSize="32" 
-                                  HorizontalAlignment="Left" 
-                                  Margin="40 30 0 0" 
-                                  ItemsSource="{Binding bofnums}"
-                                  HorizontalContentAlignment="Center"
-                                  VerticalContentAlignment="Top"
-                                  >
-                        </ComboBox>
+                        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Width="160" Margin="40 20 0 0">
+                            <ComboBox Width="100" Height="48"
+                                      x:Name="bofNumCombo"
+                                      FontSize="32" 
+                                      HorizontalAlignment="Left" 
+                                      Margin="0 0 0 0" 
+                                      ItemsSource="{Binding bofnums}"
+                                      HorizontalContentAlignment="Center"
+                                      VerticalContentAlignment="Top"
+                                      >
+                            </ComboBox>
+                            <Button x:Name="SelectButton" Width="60" Content="Select"/>
+                        </StackPanel>
                     </StackPanel>
 
                     <Image Width="150" Height="150" Source="/Images/imgEntrance.png" Margin="230,58,0,-8"/>
